@@ -1,0 +1,3 @@
+# Lua Inconsistent Iteration Order with pairs() in Nested Tables
+
+This repository demonstrates a potential issue with Lua's `pairs()` iterator when dealing with deeply nested tables.  Lua does not guarantee a specific iteration order, which can be problematic if your code relies on a consistent order for correctness. The `bug.lua` file shows a scenario where the lack of consistent iteration order might cause an issue. The solution `bugSolution.lua` provides an alternative to overcome this issue.
